@@ -9,16 +9,17 @@
 .logo { 
     width: 23%;
     padding: 1%;
-    text-align: center;
+    text-align: left;
 }
+
 nav ul {
     width: 50%;
-    margin-left: auto;
+    margin-left: left;
 }
 
 heroImg {
-    height:600px;
-    padding:25px;
+    height: 600px;
+    padding: 25px;
 }
  
 p{
@@ -38,4 +39,37 @@ footer ul {
 
 footer li{
     padding: center;
+}
+
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    margin: left;
+    padding: 10px;
+}
+
+.workGrid {
+    display: grid;
+    flex-wrap: wrap;
+}
+
+.item1 {
+    grid-area: myArea;
+}
+.grid-container {
+    display: grid;
+    grid-template-areas: 'Weevo' 
+}
+
+@media only screen and (max-width: 600){
+    flex-direction: columns;
+    grid-template-rows: 300px 300px 300px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "My Skills"
+        "My Work"
+        "About Me"
+        "Contact Me"
+    ;
 }
