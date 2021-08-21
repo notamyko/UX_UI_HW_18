@@ -23,7 +23,6 @@ heroImg {
 }
  
 p{
-    width: 500px;
     margin: 0 auto;
 }
 
@@ -43,10 +42,11 @@ footer li{
 
 .flexContainer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 20%;
     margin: left;
     padding: 10px;
+    align-items: center;
 }
 
 .workGrid {
@@ -62,8 +62,17 @@ footer li{
     grid-template-areas: 'Weevo' 
 }
 
+.imageSize {
+    width: 30%;
+}
+
+.selfPhoto {
+    width: 100px;
+}
+
 @media only screen and (max-width: 600){
-    flex-direction: columns;
+   #categoryGrid {
+    flex-direction: column;
     grid-template-rows: 300px 300px 300px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
@@ -71,5 +80,6 @@ footer li{
         "My Work"
         "About Me"
         "Contact Me"
-    ;
+        ;
+   }
 }
