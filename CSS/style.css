@@ -1,8 +1,12 @@
+body {background-color: #F2EAE3}
+
 .navbar {
     display:inline-block;
+    background-color: #E2E0DE;
     vertical-align: top;
-    color:red;
-    width: 73%;
+    color: #373738;
+    font-size: 20px;
+    width: 100%;
     padding: 1%;
 }
 
@@ -17,9 +21,9 @@ nav ul {
     margin-left: left;
 }
 
-heroImg {
-    height: 600px;
-    padding: 25px;
+.heroimg {
+    height: 100px;
+    padding: 10px;
 }
  
 p{
@@ -27,7 +31,7 @@ p{
 }
 
 footer {
-    background-color: #373738;
+    background-color: #E2E0DE;
     padding: center;
 }
 
@@ -44,6 +48,7 @@ footer li{
     display: flex;
     flex-direction: column;
     width: 20%;
+    font-size: 20px;
     margin: left;
     padding: 10px;
     align-items: center;
@@ -63,11 +68,11 @@ footer li{
 }
 
 .imageSize {
-    width: 30%;
+    width: 50%;
 }
 
 .selfPhoto {
-    width: 100px;
+    width: 200px;
 }
 
 @media only screen and (max-width: 600){
